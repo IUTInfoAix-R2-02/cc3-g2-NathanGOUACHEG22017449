@@ -65,6 +65,23 @@ public class ToileController implements Initializable {
     TextField t6;
 
     @FXML
+    private void vider() {
+        p1.setOpacity(0);
+        p2.setOpacity(0);
+        p3.setOpacity(0);
+        p4.setOpacity(0);
+        p5.setOpacity(0);
+        p6.setOpacity(0);
+        error.setText("");
+        t1.clear();
+        t2.clear();
+        t3.clear();
+        t4.clear();
+        t5.clear();
+        t6.clear();
+    }
+
+    @FXML
     private void click1() {
         String texte = t1.getText();
         double valeur = Double.valueOf(texte);

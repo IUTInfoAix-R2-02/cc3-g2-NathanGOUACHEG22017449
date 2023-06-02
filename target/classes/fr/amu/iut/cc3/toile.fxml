@@ -20,7 +20,7 @@
         <Line endX="200" endY="400.0" startX="200.0" startY="0" styleClass="toile" />
         <Line endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile" />
         <Line endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile" />
-        <Text text="Compétence 1" x="170" y="0" />
+        <Text layoutX="-20.0" text="Compétence 1" wrappingWidth="94.82763671875" x="170" y="0" />
         <Text text="Compétence 2" x="300" y="100" />
         <Text text="Compétence 3" x="300" y="300" />
         <Text text="Compétence 4" x="170" y="410" />
@@ -33,6 +33,9 @@
         <Circle fx:id="p4" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
         <Circle fx:id="p5" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
         <Circle fx:id="p6" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <HBox.margin>
+         <Insets top="10.0" />
+      </HBox.margin>
     </Pane>
     <VBox prefHeight="420.0" prefWidth="260.0">
         <children>
@@ -78,7 +81,7 @@
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="245.0" spacing="15.0">
                 <children>
                     <Button mnemonicParsing="false" text="Tracer" />
-                    <Button mnemonicParsing="false" text="Vider" />
+                    <Button mnemonicParsing="false" onAction="#vider" text="Vider" />
                 </children>
             </HBox>
         </children></VBox>
