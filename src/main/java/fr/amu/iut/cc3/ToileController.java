@@ -2,6 +2,7 @@ package fr.amu.iut.cc3;
 
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.beans.value.ChangeListener;
@@ -35,6 +36,9 @@ public class ToileController implements Initializable {
     private static int angleDepart = 90;
     private static int noteMaximale = 20;
 
+    private IntegerProperty p1x;
+    private IntegerProperty p1y;
+
     @FXML
     private Label error;
 
@@ -65,6 +69,19 @@ public class ToileController implements Initializable {
     TextField t6;
 
     @FXML
+    Line l1;
+    @FXML
+    Line l2;
+    @FXML
+    Line l3;
+    @FXML
+    Line l4;
+    @FXML
+    Line l5;
+    @FXML
+    Line l6;
+
+    @FXML
     private void vider() {
         p1.setOpacity(0);
         p2.setOpacity(0);
@@ -79,6 +96,22 @@ public class ToileController implements Initializable {
         t4.clear();
         t5.clear();
         t6.clear();
+        l1.setOpacity(0);
+        l2.setOpacity(0);
+        l3.setOpacity(0);
+        l4.setOpacity(0);
+        l5.setOpacity(0);
+        l6.setOpacity(0);
+    }
+
+    @FXML
+    private void tracer() {
+        l1.setOpacity(1);
+        l2.setOpacity(1);
+        l3.setOpacity(1);
+        l4.setOpacity(1);
+        l5.setOpacity(1);
+        l6.setOpacity(1);
     }
 
     @FXML
@@ -185,7 +218,35 @@ public class ToileController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        error.setStyle("-fx-color-label-visible: red");
+        l1.startXProperty().bind(p1.layoutXProperty());
+        l1.startYProperty().bind(p1.layoutYProperty());
+        l1.endXProperty().bind(p2.layoutXProperty());
+        l1.endYProperty().bind(p2.layoutYProperty());
+
+        l2.startXProperty().bind(p2.layoutXProperty());
+        l2.startYProperty().bind(p2.layoutYProperty());
+        l2.endXProperty().bind(p3.layoutXProperty());
+        l2.endYProperty().bind(p3.layoutYProperty());
+
+        l3.startXProperty().bind(p3.layoutXProperty());
+        l3.startYProperty().bind(p3.layoutYProperty());
+        l3.endXProperty().bind(p4.layoutXProperty());
+        l3.endYProperty().bind(p4.layoutYProperty());
+
+        l4.startXProperty().bind(p4.layoutXProperty());
+        l4.startYProperty().bind(p4.layoutYProperty());
+        l4.endXProperty().bind(p5.layoutXProperty());
+        l4.endYProperty().bind(p5.layoutYProperty());
+
+        l5.startXProperty().bind(p5.layoutXProperty());
+        l5.startYProperty().bind(p5.layoutYProperty());
+        l5.endXProperty().bind(p6.layoutXProperty());
+        l5.endYProperty().bind(p6.layoutYProperty());
+
+        l6.startXProperty().bind(p6.layoutXProperty());
+        l6.startYProperty().bind(p6.layoutYProperty());
+        l6.endXProperty().bind(p1.layoutXProperty());
+        l6.endYProperty().bind(p1.layoutYProperty());
     }
 
     int getXRadarChart(double value, int axe ){

@@ -33,6 +33,12 @@
         <Circle fx:id="p4" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
         <Circle fx:id="p5" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
         <Circle fx:id="p6" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="100.0" fx:id="l1" opacity="0.0" startX="-100.0" />
+        <Line endX="100.0" fx:id="l2" opacity="0.0" startX="-100.0" />
+        <Line endX="100.0" fx:id="l3" opacity="0.0" startX="-100.0" />
+        <Line endX="100.0" fx:id="l4" opacity="0.0" startX="-100.0" />
+        <Line endX="100.0" fx:id="l5" opacity="0.0" startX="-100.0" />
+        <Line endX="100.0" fx:id="l6" opacity="0.0" startX="-100.0" />
       <HBox.margin>
          <Insets top="10.0" />
       </HBox.margin>
@@ -80,7 +86,7 @@
          </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="245.0" spacing="15.0">
                 <children>
-                    <Button mnemonicParsing="false" text="Tracer" />
+                    <Button mnemonicParsing="false" onAction="#tracer" text="Tracer" />
                     <Button mnemonicParsing="false" onAction="#vider" text="Vider" />
                 </children>
             </HBox>
