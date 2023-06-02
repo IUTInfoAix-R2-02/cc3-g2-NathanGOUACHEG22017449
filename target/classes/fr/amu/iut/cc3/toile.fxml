@@ -33,12 +33,12 @@
         <Circle fx:id="p4" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
         <Circle fx:id="p5" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
         <Circle fx:id="p6" layoutX="201.0" layoutY="295.0" opacity="0.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
-      <Line endX="100.0" fx:id="l1" opacity="0.0" startX="-100.0" />
-        <Line endX="100.0" fx:id="l2" opacity="0.0" startX="-100.0" />
-        <Line endX="100.0" fx:id="l3" opacity="0.0" startX="-100.0" />
-        <Line endX="100.0" fx:id="l4" opacity="0.0" startX="-100.0" />
-        <Line endX="100.0" fx:id="l5" opacity="0.0" startX="-100.0" />
-        <Line endX="100.0" fx:id="l6" opacity="0.0" startX="-100.0" />
+      <Line fx:id="l1" endX="100.0" opacity="0.0" startX="-100.0" />
+        <Line fx:id="l2" endX="100.0" opacity="0.0" startX="-100.0" />
+        <Line fx:id="l3" endX="100.0" opacity="0.0" startX="-100.0" />
+        <Line fx:id="l4" endX="100.0" opacity="0.0" startX="-100.0" />
+        <Line fx:id="l5" endX="100.0" opacity="0.0" startX="-100.0" />
+        <Line fx:id="l6" endX="100.0" opacity="0.0" startX="-100.0" />
       <HBox.margin>
          <Insets top="10.0" />
       </HBox.margin>
@@ -48,7 +48,7 @@
             <GridPane prefHeight="321.0" prefWidth="245.0">
                 <columnConstraints>
                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="191.0" />
-                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="54.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="34.0" />
                 </columnConstraints>
                 <rowConstraints>
                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
