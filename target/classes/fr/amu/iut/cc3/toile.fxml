@@ -70,6 +70,11 @@
                     <Insets right="20.0" top="25.0" />
                 </VBox.margin>
             </GridPane>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Label fx:id="error" textFill="RED" />
+            </children>
+         </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="245.0" spacing="15.0">
                 <children>
                     <Button mnemonicParsing="false" text="Tracer" />

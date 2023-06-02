@@ -67,56 +67,108 @@ public class ToileController implements Initializable {
     @FXML
     private void click1() {
         String texte = t1.getText();
-        p1.setLayoutX(getXRadarChart(Double.valueOf(texte), 1));
-        p1.setLayoutY(getYRadarChart(Double.valueOf(texte), 1));
-        p1.setOpacity(1);
+        double valeur = Double.valueOf(texte);
+        
+        if (valeur > 20) {
+            error.setText("Erreur de saisie :\nles valeurs doivent être entre 0 et 20");
+        }
+        else {
+            p1.setLayoutX(getXRadarChart(valeur, 1));
+            p1.setLayoutY(getYRadarChart(valeur, 1));
+            p1.setOpacity(1);
+        }
     }
 
     @FXML
     private void click2() {
         String texte = t2.getText();
-        p2.setLayoutX(getXRadarChart(Double.valueOf(texte), 2));
-        p2.setLayoutY(getYRadarChart(Double.valueOf(texte), 2));
-        p2.setOpacity(1);
+        double valeur = Double.valueOf(texte);
+
+        if (valeur > 20) {
+            error.setText("Erreur de saisie :\n les valeurs doivent être entre 0 et 20");
+        }
+
+        else {
+            p2.setLayoutX(getXRadarChart(valeur, 2));
+            p2.setLayoutY(getYRadarChart(valeur, 2));
+            p2.setOpacity(1);
+        }
+
     }
 
     @FXML
     private void click3() {
         String texte = t3.getText();
-        p3.setLayoutX(getXRadarChart(Double.valueOf(texte), 3));
-        p3.setLayoutY(getYRadarChart(Double.valueOf(texte), 3));
-        p3.setOpacity(1);
+        double valeur = Double.valueOf(texte);
+
+        if (valeur > 20) {
+            error.setText("Erreur de saisie :\n les valeurs doivent être entre 0 et 20");
+        }
+
+        else {
+            p3.setLayoutX(getXRadarChart(valeur, 3));
+            p3.setLayoutY(getYRadarChart(valeur, 3));
+            p3.setOpacity(1);
+        }
+
     }
 
     @FXML
     private void click4() {
         String texte = t4.getText();
-        p4.setLayoutX(getXRadarChart(Double.valueOf(texte), 4));
-        p4.setLayoutY(getYRadarChart(Double.valueOf(texte), 4));
-        p4.setOpacity(1);
+        double valeur = Double.valueOf(texte);
+
+        if (valeur > 20) {
+            error.setText("Erreur de saisie :\n les valeurs doivent être entre 0 et 20");
+        }
+
+        else {
+            p4.setLayoutX(getXRadarChart(valeur, 4));
+            p4.setLayoutY(getYRadarChart(valeur, 4));
+            p4.setOpacity(1);
+        }
+
     }
 
     @FXML
     private void click5() {
         String texte = t5.getText();
-        p5.setLayoutX(getXRadarChart(Double.valueOf(texte), 5));
-        p5.setLayoutY(getYRadarChart(Double.valueOf(texte), 5));
-        p5.setOpacity(1);
+        double valeur = Double.valueOf(texte);
+
+        if (valeur > 20) {
+            error.setText("Erreur de saisie :\n les valeurs doivent être entre 0 et 20");
+        }
+
+        else {
+            p5.setLayoutX(getXRadarChart(valeur, 5));
+            p5.setLayoutY(getYRadarChart(valeur, 5));
+            p5.setOpacity(1);
+        }
+
     }
 
     @FXML
     private void click6() {
         String texte = t6.getText();
-        p6.setLayoutX(getXRadarChart(Double.valueOf(texte), 6));
-        p6.setLayoutY(getYRadarChart(Double.valueOf(texte), 6));
-        p6.setOpacity(1);
+        double valeur = Double.valueOf(texte);
+
+        if (valeur > 20) {
+            error.setText("Erreur de saisie :\n les valeurs doivent être entre 0 et 20");
+        }
+
+        else {
+            p6.setLayoutX(getXRadarChart(valeur, 6));
+            p6.setLayoutY(getYRadarChart(valeur, 6));
+            p6.setOpacity(1);
+        }
+
     }
 
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        error.setStyle("-fx-color-label-visible: red");
     }
 
     int getXRadarChart(double value, int axe ){
